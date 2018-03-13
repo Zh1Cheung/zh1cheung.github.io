@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <title>
+        异类深呼吸
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="宋大明明" content="python">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="异类深呼吸">
+    <meta property="og:url" content="http://mingmings.org">
+    <meta property="og:site_name" content="异类深呼吸">
+    <meta property="og:description" content="python, 运维">
+    <meta name="author" content="宋大明明">
+    <meta name="keywords" content="operation, python">
+    <meta name="description" content="operation, python">
+    <link rel="icon" type="image/x-icon" href="images/avatar.png">
+    <link rel="stylesheet" href="css/uno.css" type="text/css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+
+<span class="mobile btn-mobile-menu">
+    <i class="icon icon-list btn-mobile-menu__icon"></i>
+    <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+</span>
+
+<header class="panel-cover">
+    <div class="panel-main">
+        <div class="panel-main__inner panel-inverted">
+            <div class="panel-main__content">
+
+                <h1 class="panel-cover__title panel-title"><a href="/">BookCase</a></h1>
+
+                <hr class="panel-cover__divider" />
+                <p class="panel-cover__description">
+                    我不是为了输赢，我就是认真
+                </p>
+                <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+                <div class="navigation-wrapper">
+                    <nav class="cover-navigation cover-navigation--primary">
+                        <ul class="navigation">
+                            <li class="navigation__item"><a href="http://note.mingmings.org/" title="" class="blog-button">博客</a></li>
+                            <!--<li class="navigation__item"><a href="/blog" title="" class="">随笔</a></li>-->
+                            <li class="navigation__item"><a href="http://about.mingmings.org/" title="" class="">关于我</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="cover-navigation navigation--social">
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="panel-cover--overlay"></div>
+    </div>
+</header>
+
+<div class="content-wrapper">
+    <div class="content-wrapper__inner entry">
+        <!-- do nothing -->
+    <div id="container">
+    <div id="wrap">
+        <div class="outer">
+            <!-- 加载提示 -->
+            <i class="fa fa-spinner fa-spin" style="
+            font-size: 50px;
+            margin: 20px auto;
+            position: relative;
+            left: 50%;
+            color: #979797;
+            "></i>
+             <span id="close" class="back">←</span>
+             <ul id="tp-grid" class="tp-grid">
+              <!-- 自动生成 -->
+             </ul>
+        </div>
+   </div>
+
+   <script src="js/jquery.min.js"></script>
+   <script type="text/javascript" src="js/script.js"></script>
+   <!-- 书栏目插件区域 -->
+    <link rel="stylesheet" type="text/css" href="css/category.css">
+   <link rel="stylesheet" type="text/css" href="css/stapel.css">
+   <script src="js/modernizr.custom.63321.js"></script>
+   <script type="text/javascript" src="js/jquery.stapel.js"></script>
+   <script type="text/javascript" src="books.js"></script>
+   <script type="text/javascript" src="js/category.js"></script>
+
+    </div>
+
+  </div>
+    </div>
+</div>
+
+<!-- The main JavaScript file for Casper -->
+<script src="js/main.js"></script>
+<script src="js/scale.fix.js"></script>
+<script src="js/jquery.imagesloaded.min.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/jquery.githubRepoWidget.min.js"></script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+      MathJax.Hub.Config({ 
+        tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+    }); 
+    </script>
+
+<!--kill ie6 -->
+<!--[if IE 6]>
+<script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+<!--  google analytics -->
+<script>
+    // add your google analytics code here
+</script>
+
+<!-- totop -->
+<div id="totop" style="position:fixed;bottom:50px;right:30px;cursor: pointer;">
+    <a title="back to top"><img style="width:30px;height:30px;" src="/images/totop.png"/></a>
+</div>
+<script>
+    (function($) {
+        var upperLimit = 100;
+        var scrollElem = $('#totop');
+        var scrollSpeed = 500;
+        scrollElem.hide();
+        $(window).scroll(function () {
+            var scrollTop = $(document).scrollTop();
+            if ( scrollTop > upperLimit ) {
+                $(scrollElem).stop().fadeTo(300, 1); // fade back in
+            }else{
+                $(scrollElem).stop().fadeTo(300, 0); // fade out
+            }
+        });
+        $(scrollElem).click(function(){
+            $('html, body').animate({scrollTop:0}, scrollSpeed); return false;
+        });
+    })(jQuery);
+</script>
+
+<!-- fancybox -->
+
+<link rel="stylesheet" href="fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+    (function($){
+        $('.fancybox').fancybox();
+    })(jQuery);
+</script>
+
+
+</body>
+</html>
